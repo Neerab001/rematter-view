@@ -6,10 +6,16 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AppService {
+  url = "https://neerab0011-rematter-backend.hf.space"
+  // url = "http://localhost:4200"
   public constructor(private http:HttpClient) {
   }
 
   extractData(formData:any){
-    return this.http.post("http://localhost:5000/process-image", formData);
+    return this.http.post(`${this.url}/process-image`, formData);
   }
+  getCurrentDateTimeServer(): Observable<{current_time:string}>{
+    return this.http.get<{current_time:string}>(`${this.url}/now`)
+  }
+
 }
