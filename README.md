@@ -1,10 +1,3 @@
-Write Up
-
-
-Project's Architecture:
-
-
-
 Chosen Technology:
 
 Frontend
@@ -53,13 +46,11 @@ from transformers to identify State, Name, Address, Height, Gender, Date of Birt
 
 
 Deployed URLS:
-FE: https://neerab001.github.io/rematter-view/rematter-view/
+FE: https://neerab001.github.io/rematter-view/
 BE: https://neerab0011-rematter-backend.hf.space
 
 Demo:
-
-
-How to run application locally
+How to run application locally:
 
 FE: 
 Install required library npm, node
